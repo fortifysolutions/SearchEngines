@@ -1,0 +1,123 @@
+import os
+import time
+import webbrowser
+
+
+def clr():
+    if os.name=='nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
+clr()
+
+
+
+
+def google(s):
+    a1= 'https://www.google.com/search?sxsrf=ACYBGNRWE1LjmYGvtoN0fnXtj20xnmF5Ww%3A1576255958462&source=hp&ei=1sHzXbLsGMbbz7sPp8yH0AU&q='
+    #a2= 'fortify'
+    #a2,a4 = s
+    a3= '&oq='
+    #a4= 'fortify'
+    a5 = '&gs_l=psy-ab.3..0l3j0i131j0l6.12217.27445..28217...15.0..0.331.3408.0j12j6j2......0....1..gws-wiz.....10..0i10j35i362i39j35i39j0i22i30.071jOMglAW0&ved=0ahUKEwiyr-eDi7PmAhXG7XMBHSfmAVoQ4dUDCAU&uact=5'
+    g = a1+s+a3+s+a5
+    webbrowser.open_new_tab(g)
+
+
+def bing(s):
+    b1 = 'https://www.bing.com/search?q='
+    b2 = 'fortify'
+    b3 = '&search=&form=QBLH'
+    b = b1+s+b3
+    webbrowser.open_new_tab(b)
+
+
+def duckduckgo(s):
+    b1 ='https://duckduckgo.com/?q='
+    b2 ='fortify'
+    b3 = '&va=z&t=hk&ia=web'
+    b = b1 + s + b3
+    webbrowser.open_new_tab(b)
+
+
+def wiki(s):
+    b1 ='http://www.wiki.com/results1.htm?cx=009420061493499222400%3Ae8sof1xaq-u&q='
+    b2 = 'fortify'
+    b3 = '&btnG=Wiki+Search&cof=GIMP%3A009900%3BT%3A000000%3BALC%3AFF9900%3BGFNT%3AB0B0B0%3BLC%3A003F7D%3BBGC%3AFFFFFF%3BVLC%3A666666%3BGALT%3A36A200%3BFORID%3A9%3B&as_q=on'
+    b = b1 + s + b3
+    webbrowser.open_new_tab(b)
+
+def ccsearch(s):
+    b1 = 'https://ccsearch.creativecommons.org/search?li=&lt=&categories=&extension=&aspect_ratio=&size=&provider=&q='
+    b2 = 'fortify'
+    b3 = '&searchBy='
+    b = b1 + s + b3
+    webbrowser.open_new_tab(b)
+
+def gibiru(s):
+    b1 = 'https://gibiru.com/results.html?q='
+    b2 = 'fortify'
+    b3 = '&cx=partner-pub-5956360965567042%3A8627692578&cof=FORID%3A11&ie=UTF-8'
+    b = b1 + s + b3
+    webbrowser.open_new_tab(b)
+
+
+def archive(s):
+    b1 = 'https://web.archive.org/web/*/'
+    b2 = 'fortify'
+    b = b1 + s
+    webbrowser.open_new_tab(b)
+
+def searchencrypt(s):
+    b1 = 'https://www.searchencrypt.com/search?eq='
+    b2 = '4gGDXi9aslgbFQwpOYQ8s'
+    b3 = 'w%3d%3d&ett=5&ptc=://mail'
+    b = b1 + s + b3
+    webbrowser.open_new_tab(b)
+
+def yandex(s):
+    b1 = 'https://yandex.com/search/?text='
+    b2 = 'fortify'
+    b3 = '&lr=10562'
+    b = b1 + s + b3
+    webbrowser.open_new_tab(b)
+
+def swisscow(s):
+    b1 = 'https://swisscows.com/web?culture=en&query='
+    b2 = 'fortify'
+    b = b1 + s
+    webbrowser.open_new_tab(b)
+
+
+def ecosia(s):
+    b1 = 'https://www.ecosia.org/search?q='
+    b2 = 'fortify'
+    b = b1 + s
+    webbrowser.open_new_tab(b)
+
+def giga(s):
+    b1 = 'https://www.gigablast.com/search?c=main&qlangcountry=en-us&q='
+    b2 = 'fortify'
+    b = b1 + s
+    webbrowser.open_new_tab(b)
+
+
+def wb():
+    s = input('Enter your search content: ')
+    google(s)
+    bing(s)
+    duckduckgo(s)
+    gibiru(s)
+    ecosia()
+    swisscow(s)
+    searchencrypt(s)
+    giga(s)
+    yandex(s)
+    wiki(s)
+    ccsearch(s)
+    archive(s)
+
+
+wb()
+clr()
