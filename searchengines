@@ -109,7 +109,7 @@ def wb():
     bing(s)
     duckduckgo(s)
     gibiru(s)
-    ecosia()
+    ecosia(s)
     swisscow(s)
     searchencrypt(s)
     giga(s)
